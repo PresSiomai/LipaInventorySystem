@@ -1,0 +1,438 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+/*login*/
+
+.container{
+
+  margin-top: 100px;
+
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family:Poppins;
+  font-weight: 500;
+}
+.login-row{
+  height: 600px;
+}
+
+.logo-part{
+  background-color: #343434;
+  border-radius: 20px 0% 0% 20px;
+  color: white;
+  padding:50px;
+  padding-top: 80px;
+}
+
+.logo-part img{
+  width: 250px;
+  height: 250px;
+}
+
+.login-part{
+  padding:50px;
+  background-color: #ffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.login-part img{
+  width: 150px;
+  height: 150px;
+}
+
+.login-part, h3{
+/*  margin-top: 100px;*/
+}
+
+.login-part p{
+  font-size: 10pt;
+  margin-top: 10px;
+}
+
+.textbox{
+  margin-top: 40px;
+  width: 70% !important;
+}
+
+.login-title{
+  margin-top: 80px;
+}
+
+.logo-part hr{
+  background-color: #ffffff;
+  height: 1px;
+  width: 95% !important;
+}
+h3{
+  font-weight: bold;
+}
+
+.textbox button{
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #f04e56;
+  color: white;
+  border-radius: 5px;  
+  border: none;
+}
+
+.textbox button:hover{
+
+  background-color: #f54b55 !important;
+  
+}
+
+/*end login*/
+
+
+/*sidebar*/
+.logo-banner{
+  display: flex;
+  flex-direction: row;
+}
+
+.title-banner{
+  font-size: 15pt;
+  margin: auto;
+
+  line-height: 120%;
+}
+
+
+#img-logo{
+  margin: 15px;
+  margin-left: 20px;
+  margin-right: auto 0;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #343434;
+  color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  border-left: solid 5px #aa0011;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #343434;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.side-item-active {
+ background-color: #640001 !important;
+ color: white;
+ padding:20px !important;
+}
+
+.side-item-active:hover {
+ border: none !important;
+}
+
+
+.sidenav{
+  background-color: #343434;
+  color:white;
+}
+.w3-bar-item{
+  padding:20px;
+}
+
+#active{
+  background-color: #640001;
+  border-left: solid 5px #aa0011;
+  padding:20px;
+}
+
+#active:hover {
+  background-color: #640001 !important;
+  border-left: solid 5px #aa0011;
+}
+
+#link{
+  padding:20px;
+}
+
+/*end sidebar*/
+
+/*navbar*/
+
+.navbar{
+  background-color: #640001 !important;
+  padding-right: 50px;
+  padding-top: 10px;
+  color: white;
+  border-top: solid 10px #7a0108;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-text{
+  color: white;
+  right: 0px;
+  margin-top: 5px;
+}
+
+.navbar p{
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.navbar i{
+  margin-top: 10px;
+
+
+
+}
+/*end navbar*/
+
+.dashboard-body{
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-cards-section{
+ margin-left: 70px;
+ width: 40%;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.dashboard-cards-section2{
+  width: 70%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-table-section{
+  width: 90%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+.transfer-body{
+  width: 80%;
+  margin-left: 10%;
+  min-height: 600px;
+  background-color: #f9f9f9;
+  height: 100%;
+  display: inline-block;
+  border-radius: 5px;
+
+}
+
+.trans-content{
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.trans-qr-content img{
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: none;
+}
+
+.trans-qr-content {
+  width: 40;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+
+.transfer-item-name{
+  float: left;
+  padding: 10px 10px;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 2em;
+  width: auto;
+}
+
+
+
+.trans-text{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+.trans-item-info{
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.item-label{
+
+ margin-right: 10px;
+ width: 250px;
+}
+
+.item-data{
+  padding: 2px 2px;
+  margin-left: 10px;
+  
+}
+
+.qr-label{
+  margin-top: -50px !important;
+  margin: auto;
+
+}
+
+
+
+.barcode{
+
+  width: 300px;
+}
+
+/*view item section*/
+
+.view-body{
+  width: 80%;
+  margin-left: 10%;
+  min-height: 500px;
+  background-color: #f9f9f9;
+  height: 100%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+
+
+/*item history*/
+
+
+.hstry-header{
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hstry-content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.hstry-title h2{
+  margin-top: 10px;
+}
+
+.hstry-item-info{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+
+.hstry-qr{
+  width: auto;
+  margin-right: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.hstry-qr-img{
+  margin: auto;
+  float: right;
+}
+
+.hstry-qr-img img{
+
+  width: 200px;
+  height: 200px;
+}
+
+.hstry-qr-label{
+  margin-top: -50px;
+  width: 300px;
+  padding: 5px 5px;
+}
+
+.btn_print{
+
+  padding-top: 10px;
+  width: 200px; 
+  margin: auto;
+
+}
+
+.hstry-btn{
+  display: flex;
+  flex-direction: row;
+}
+

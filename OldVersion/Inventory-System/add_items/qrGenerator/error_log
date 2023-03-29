@@ -1,0 +1,42 @@
+[07-Mar-2020 02:00:34 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79
+[07-Mar-2020 02:00:48 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79
+[07-Mar-2020 02:00:52 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79
+[07-Mar-2020 02:00:53 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79
+[07-Mar-2020 02:00:55 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79
+[07-Mar-2020 02:18:21 UTC] PHP Fatal error:  Uncaught BaconQrCode\Exception\InvalidArgumentException: Found empty contents in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php:79
+Stack trace:
+#0 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/Writer/PngWriter.php(37): BaconQrCode\Writer->writeString('', 'UTF-8', 1)
+#1 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/endroid/qrcode/src/QrCode.php(537): Endroid\QrCode\Writer\PngWriter->writeString(Object(Endroid\QrCode\QrCode))
+#2 /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/generate.php(10): Endroid\QrCode\QrCode->writeString()
+#3 {main}
+  thrown in /home/z16a9qj2ojlr/public_html/zerterraph_user/qrGenerator/vendor/bacon/bacon-qr-code/src/BaconQrCode/Writer.php on line 79

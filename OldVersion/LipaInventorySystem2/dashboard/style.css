@@ -1,0 +1,27 @@
+
+
+.sidenav{
+	background-color: #343434;
+	color:white;
+}
+.w3-bar-item{
+	padding:20px;
+}
+
+#active{
+	background-color: #640001;
+	border-left: solid 5px #aa0011;
+	padding:20px;
+}
+
+#active:hover {
+	background-color: #640001 !important;
+	border-left: solid 5px #aa0011;
+}
+
+#link{
+	padding:20px;
+}
+
+/*sidebar*/
+
