@@ -26,6 +26,7 @@ npm run tailwind
   }
 
   * {
+    min-height: 0;
     border-color: transparent;
     scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
     scrollbar-width: thin;
@@ -39,6 +40,19 @@ npm run tailwind
 
 @layer components {
   /* GLOBAL CLASSES */
+
+  .layout {
+    @apply flex h-screen bg-secondary-lighter;
+  }
+
+  .layout .layout-content {
+    @apply flex flex-grow flex-col h-screen;
+  }
+
+  .page-title {
+    @apply text-white border-b border-white p-2 text-2xl;
+  }
+
   .navlink {
     @apply p-4 border-l-4 flex items-center gap-2 hover:bg-primary/20 w-full;
   }
@@ -61,6 +75,30 @@ npm run tailwind
 
   .sidebar {
     @apply bg-secondary flex-shrink-0 w-[250px] text-white flex flex-col;
+  }
+
+  .table {
+    @apply bg-white w-full border-collapse;
+  }
+
+  .table thead {
+    @apply bg-secondary text-white;
+  }
+
+  .table thead th {
+    @apply border border-slate-500 text-sm font-normal p-2;
+  }
+
+  .table tbody td {
+    @apply border border-slate-200 text-sm font-light p-2;
+  }
+
+  .pagination {
+    @apply border-collapse border border-slate-500 text-slate-500 flex text-xs font-light rounded divide-x divide-slate-500;
+  }
+
+  .pagination > * {
+    @apply px-1;
   }
 
   /* LOGIN CLASSES */
@@ -135,13 +173,4 @@ npm run tailwind
     @apply flex justify-end p-2 border-t border-secondary;
   }
 
-  #dashboard
-  .pagination {
-    @apply border-collapse border border-slate-500 text-slate-500 flex text-xs font-light rounded divide-x divide-slate-500;
-  }
-
-  #dashboard
-  .pagination > * {
-    @apply px-1;
-  }
 }

@@ -8,24 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="<?= url('/assets/css/main.css') ?>">
-
     <!-- fontawesome v5.13 -->
     <link rel="stylesheet" href="<?= url('/assets/fontawesome/css/all.css') ?>">
-
     <script src="<?= url('/assets/js/main.js') ?>" defer></script>
 </head>
 
 <body>
-    <div class="flex h-screen bg-secondary-lighter">
+    <div class="layout">
         <?php include "../components/sidebar.php" ?>
 
-        <div class="flex flex-grow flex-col h-screen">
+        <div class="layout-content">
             <?php include "../components/header.php" ?>
 
-            <main id="dashboard" class="p-8 flex-grow flex flex-col min-h-0">
-                <div class="text-white border-b border-white p-2">
-                    <h1 class="text-2xl">DASHBOARD</h1>
-                </div>
+            <main id="dashboard" data-page="dashboard" class="p-8 flex-grow flex flex-col min-h-0">
+                <h1 class="page-title">DASHBOARD</h1>
 
                 <div class="grid grid-cols-3 gap-4 mt-4">
                     <div class="card-statistic">

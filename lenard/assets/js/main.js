@@ -1,7 +1,14 @@
 window.addEventListener('load', function() {
+
+  //Set Active Navlink
+  let active = document.querySelector('main[data-page]')
+  if (active) {
+    let page = active.dataset.page;
+    activateNavLink(page)
+  }
+
   //Dashboard Scripts
   if (document.getElementById('dashboard')) {
-    activateNavLink('dashboard')
     const timeEl = document.querySelector('#time')
     const dateEl = document.querySelector('#date')
 
@@ -37,7 +44,7 @@ window.addEventListener('load', function() {
 
 
 const activateNavLink = (page) => {
-  const pageEl = document.querySelector(`[data-page=${page}]`)
+  const pageEl = document.querySelector(`[data-target=${page}]`)
   if (pageEl) {
     pageEl.classList.add('active')
   }
