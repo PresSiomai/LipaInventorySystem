@@ -15,6 +15,7 @@ npm run tailwind
     --color-primary: 122 1 8;
     --color-primary-darker: 100 0 1;
     --color-primary-lighter: 170 0 17;
+    --color-primary-lightest: 245 75 85;
     --color-secondary: 52 52 52;
     --color-secondary-lighter: 127 127 127;
     --color-secondary-darker: 35 35 35;
@@ -39,7 +40,15 @@ npm run tailwind
 @layer components {
   /* GLOBAL CLASSES */
   .navlink {
-    @apply p-4 border-l-4 block;
+    @apply p-4 border-l-4 flex items-center gap-2 hover:bg-primary/20 w-full;
+  }
+
+  .navlink:hover .navlink-dropdown {
+    @apply flex;
+  }
+
+  .navlink-dropdown {
+    @apply absolute top-0 hidden flex-col left-full bg-white text-black text-left text-sm w-[250px] divide-y divide-slate-300 font-light;
   }
 
   .navlink.active {
@@ -52,5 +61,87 @@ npm run tailwind
 
   .sidebar {
     @apply bg-secondary flex-shrink-0 w-[250px] text-white flex flex-col;
+  }
+
+  /* LOGIN CLASSES */
+  #login {
+    @apply flex flex-col flex-grow items-center justify-center;
+  }
+
+  #login
+  .form-input {
+    @apply flex items-center border border-slate-400 rounded-lg overflow-hidden font-light text-sm;
+  }
+
+  #login
+  .form-input > input {
+    @apply outline-none py-2;
+  }
+
+  #login
+  .btn-login {
+    @apply bg-primary-lightest mt-8 w-full text-white rounded-lg py-2 hover:bg-primary-lightest/90;
+  }
+
+
+  /* DASHBOARD CLASSES */
+  #dashboard
+  .card-statistic {
+    @apply h-28 bg-primary rounded-2xl p-4 flex text-white items-center;
+  }
+
+  #dashboard
+  .card-statistic .card-statistic-body {
+    @apply flex flex-grow flex-col h-full;
+  }
+  
+  #dashboard 
+  .card-statistic .card-statistic-icon {
+    @apply  text-5xl text-white/20;
+  }
+
+  #dashboard
+  .card {
+    @apply bg-white flex flex-col min-h-0;
+  }
+
+  #dashboard
+  .card .card-header{
+    @apply flex-shrink-0 h-8 bg-secondary flex items-center justify-between px-4 text-white text-xs italic font-light;
+  }
+
+  #dashboard
+  .card .card-body{
+    @apply flex-grow overflow-y-auto min-h-0;
+  }
+
+  #dashboard
+  .card .card-item {
+    @apply p-2 border-b border-secondary flex flex-col;
+  }
+
+  #dashboard
+  .card .card-item > h4 {
+    @apply font-semibold text-sm;
+  }
+
+  #dashboard
+  .card .card-item > h5 {
+    @apply text-xs italic font-light;
+  }
+
+  #dashboard
+  .card .card-footer {
+    @apply flex justify-end p-2 border-t border-secondary;
+  }
+
+  #dashboard
+  .pagination {
+    @apply border-collapse border border-slate-500 text-slate-500 flex text-xs font-light rounded divide-x divide-slate-500;
+  }
+
+  #dashboard
+  .pagination > * {
+    @apply px-1;
   }
 }

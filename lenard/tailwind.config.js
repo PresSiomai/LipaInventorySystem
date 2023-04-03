@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primary: {
           lighter: "rgb(var(--color-primary-lighter) / <alpha-value>)",
+          lightest: "rgb(var(--color-primary-lightest) / <alpha-value>)",
           DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
           darker: "rgb(var(--color-primary-darker) / <alpha-value>)",
         },
