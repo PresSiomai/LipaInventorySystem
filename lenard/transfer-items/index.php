@@ -53,7 +53,7 @@
                                     <td>PHP 96,340</td>
                                     <td>2022-07-31</td>
                                     <td>
-                                        <a href="#">
+                                        <a href="<?= url('/transfer-items-show') ?>">
                                             <i class="fas fa-eye text-primary-lightest"></i>
                                         </a>
                                     </td>

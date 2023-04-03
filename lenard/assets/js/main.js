@@ -40,6 +40,21 @@ window.addEventListener('load', function() {
       }
     })
   }
+
+  //Transfer Item Show
+  if (document.getElementById('transfer-items-show')) {
+    window.openModal = function (id) {
+      const modal = document.getElementById(id)
+      modal.classList.remove('hidden')
+      modal.classList.add('flex')
+    }
+
+    window.closeModal = function (id) {
+      const modal = document.getElementById(id)
+      modal.classList.remove('flex')
+      modal.classList.add('hidden')
+    }
+  }
 })
 
 

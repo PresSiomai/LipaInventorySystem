@@ -23,7 +23,7 @@
             <main id="dashboard" data-page="dashboard" class="p-8 flex-grow flex flex-col min-h-0">
                 <h1 class="page-title">DASHBOARD</h1>
 
-                <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="grid grid-cols-3 gap-4 mt-4 flex-shrink-0">
                     <div class="card-statistic">
                         <div class="card-statistic-body">
                             <h1 class="text-2xl flex-grow">5,000</h1>
