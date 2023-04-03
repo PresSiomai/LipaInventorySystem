@@ -1,0 +1,56 @@
+/* 
+To transpile into css run
+npm install
+npm run tailwind
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* MAIN CSS CONFIGURATION */
+@layer base {
+  :root {
+    --color-primary: 122 1 8;
+    --color-primary-darker: 100 0 1;
+    --color-primary-lighter: 170 0 17;
+    --color-secondary: 52 52 52;
+    --color-secondary-lighter: 127 127 127;
+    --color-secondary-darker: 35 35 35;
+
+    --scrollbar-thumb-color: rgb(179, 179, 179);
+    --scrollbar-track-color: rgb(241, 241, 241);
+    --scrollbar-size: 5px;
+  }
+
+  * {
+    border-color: transparent;
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+    scrollbar-width: thin;
+  }
+
+  *::-webkit-scrollbar{ width: 5px; }
+  *::-webkit-scrollbar-track{ background-color: var(--scrollbar-track-color); }
+  *::-webkit-scrollbar-thumb{ background-color: var(--scrollbar-thumb-color); }
+}
+
+
+@layer components {
+  /* GLOBAL CLASSES */
+  .navlink {
+    @apply p-4 border-l-4 block;
+  }
+
+  .navlink.active {
+    @apply bg-primary-darker border-primary-lighter;
+  }
+
+  .header {
+    @apply h-8 bg-primary-darker text-white text-sm flex justify-end items-center px-8 font-light;
+  }
+
+  .sidebar {
+    @apply bg-secondary flex-shrink-0 w-[250px] text-white flex flex-col;
+  }
+}
