@@ -25,7 +25,7 @@
                 <span>PRINTING</span>
                 <i class="ml-auto fal fa-angle-left fa-rotate-180"></i>
             </a>
-            <a href="#" class="navlink" data-target="unserviceable-items">
+            <a href="<?= url('/unserviceable-items') ?>" class="navlink" data-target="unserviceable-items">
                 <i class="fas fa-exclamation-triangle"></i>
                 <span>UNSERVICEABLE ITEMS</span>
             </a>
